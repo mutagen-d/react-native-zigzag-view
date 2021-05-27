@@ -1,0 +1,15 @@
+{
+  "name": "react-native-zigzag-view",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "zig-zag",
+    "borders",
+    "receipts",
+    "react"
+  ],
+  "author": "mutagen-d",
+  "license": "ISC"
+}
