@@ -1,8 +1,13 @@
 {
   "name": "react-native-zigzag-view",
   "version": "0.1.0",
-  "description": "",
+  "description": "ZigzagView for using for tickets, and receipts",
   "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mutagen-d/react-native-zigzag-view.git"
+  },
   "keywords": [
     "react-native",
     "zig-zag",
@@ -11,5 +16,8 @@
     "react"
   ],
   "author": "mutagen-d",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-native-zigzag-lines": "^0.1.0"
+  }
 }
