@@ -20,7 +20,7 @@ import ZigzagLines from 'react-native-zigzag-lines'
  *  surfaceColor?: ColorValue
  *  backgroundColor?: ColorValue
  *  contentContainerStyle?: StyleProp<ViewStyle>
- *  linesProps?: Omit<ZigzagLinesProps, 'color' | 'backgroundColor' | 'width' | 'position'>
+ *  zigzagProps?: Omit<ZigzagLinesProps, 'color' | 'backgroundColor' | 'width' | 'position'>
  *  top?: boolean
  *  bottom?: boolean
  * }} ZigzagViewProps
@@ -31,14 +31,14 @@ const ZigzagView = (props) => {
   const {
     style,
     contentContainerStyle,
-    linesProps,
+    zigzagProps,
     backgroundColor: backColor,
     surfaceColor: surfColor,
     bottom = true,
     top = true,
     ...restProps
   } = props
-  const [width, setWidth] = useState(360)
+  const [width, setWidth] = useState()
   const backgroundColor = backColor || (style ? StyleSheet.flatten(style).backgroundColor : undefined)
   const surfaceColor = surfColor || (contentContainerStyle ? StyleSheet.flatten(contentContainerStyle).backgroundColor : undefined)
   return <View
@@ -52,8 +52,8 @@ const ZigzagView = (props) => {
       { backgroundColor },
     ]}
   >
-    {Boolean(top) && <ZigzagLines
-      {...linesProps}
+    {Boolean(top) && typeof width == 'number' && <ZigzagLines
+      {...zigzagProps}
       width={width}
       position="top"
       backgroundColor={backgroundColor}
@@ -68,8 +68,8 @@ const ZigzagView = (props) => {
     >
       {props.children}
     </View>
-    {Boolean(bottom) && <ZigzagLines
-      {...linesProps}
+    {Boolean(bottom) && typeof width == 'number' && <ZigzagLines
+      {...zigzagProps}
       width={width}
       position="bottom"
       backgroundColor={backgroundColor}
