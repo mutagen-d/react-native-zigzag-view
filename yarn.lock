@@ -81,10 +81,10 @@ react-native-svg@^12.1.1:
     css-select "^2.1.0"
     css-tree "^1.0.0-alpha.39"
 
-react-native-zigzag-lines@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-zigzag-lines/-/react-native-zigzag-lines-0.1.0.tgz#1cafadeec3e609da6a7667c5066b921e47e4a143"
-  integrity sha512-6Jhq1TNmWiAxLwQbttXcvF/lNOeCVrFtjuC80j728Y0IxucAF6Q5Vdx0EIPbF+LIRouoFOVscb9i+Z8RFf/9Sg==
+react-native-zigzag-lines@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-zigzag-lines/-/react-native-zigzag-lines-0.1.1.tgz#322d8fa9cddd06387bcee24864cd1816c4c4cb6e"
+  integrity sha512-joParrvI158whxrmkuWjxMzhNDEQ9MQMa/Xxidl3umwvjBGW0tOMcn4Ll+dRmf1Nw8uLg1rW1e/4ZPvwGWTG/A==
   dependencies:
     react-native-svg "^12.1.1"
 
