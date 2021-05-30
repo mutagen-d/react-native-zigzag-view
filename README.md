@@ -1,6 +1,8 @@
 # react-native-zigzag-view
 ZigzagView for using for tickets, and receipts
 
+[<IMG SRC="https://github.com/mutagen-d/react-native-zigzag-view/raw/master/samples/receipt.png" width="400" />](#properties)
+
 # Installation
 ```bash
 yarn add react-native-zigzag-view
@@ -10,20 +12,15 @@ This package depends on [`react-native-svg`](https://github.com/react-native-svg
 # Usage
 ```js
 import React from "react"
-import { Text } from "react-native"
+import { Text, View } from "react-native"
 import ZigzagView from "react-native-zigzag-view"
 
-const Receipt = ({ date, price }) => {
+const Receipt = () => {
   return <ZigzagView
     backgroundColor="#CCC"
     surfaceColor="#FFF"
-    contentContainerStyle={{
-      flexDirection: "row",
-      justifyContent: "space-between",
-    }}
   >
-    <Text>{date}</Text>
-    <Text>{price}</Text>
+    {Content of receipt}
   </ZigzagView>
 }
 ```
