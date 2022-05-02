@@ -1,6 +1,6 @@
 {
   "name": "react-native-zigzag-view",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "ZigzagView for using for tickets, and receipts",
   "main": "index.js",
   "types": "index.d.ts",
@@ -18,6 +18,6 @@
   "author": "mutagen-d",
   "license": "ISC",
   "dependencies": {
-    "react-native-zigzag-lines": "^0.1.1"
+    "react-native-zigzag-lines": "^0.2.0"
   }
 }
